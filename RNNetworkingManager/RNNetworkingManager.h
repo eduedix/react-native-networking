@@ -1,13 +1,14 @@
 //
 //  RNNetworkingManager.h
-//  RNNetworkingManager
+//  RNNetworking
 //
-//  Created by Erdem Başeğmez on 27.06.2015.
-//  Copyright (c) 2015 Erdem Başeğmez. All rights reserved.
+//  Created by Erdem Başeğmez on 18.06.2015.
+//  Copyright (c) 2015 Facebook. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <UIKit/UIKit.h>
+#import "RCTBridgeModule.h"
 
-@interface RNNetworkingManager : NSObject
+@interface RNNetworkingManager : NSObject <RCTBridgeModule>
 
 @end

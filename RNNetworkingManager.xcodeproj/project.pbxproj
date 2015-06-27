@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A578268C121B3E14C0CCCA5C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 600C3B9490B8A2B1F13B43BA /* libPods.a */; };
 		E839CE341B3EF54100115CBE /* libRNNetworkingManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E839CE281B3EF54100115CBE /* libRNNetworkingManager.a */; };
-		E839CE441B3EF73200115CBE /* RNNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E839CE421B3EF73200115CBE /* RNNetworkingManager.m */; };
+		E895ECAD1B3F055D009D0187 /* RNNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E895ECAB1B3F055D009D0187 /* RNNetworkingManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +42,9 @@
 		E839CE281B3EF54100115CBE /* libRNNetworkingManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNNetworkingManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E839CE331B3EF54100115CBE /* RNNetworkingManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNNetworkingManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E839CE391B3EF54100115CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E839CE421B3EF73200115CBE /* RNNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNNetworkingManager.m; path = ../../RNNetworking/RNNetworkingManager.m; sourceTree = "<group>"; };
-		E839CE431B3EF73200115CBE /* RNNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNNetworkingManager.h; path = ../../RNNetworking/RNNetworkingManager.h; sourceTree = "<group>"; };
 		E839CE671B3EFC1F00115CBE /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/../build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
+		E895ECAB1B3F055D009D0187 /* RNNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNetworkingManager.m; sourceTree = "<group>"; };
+		E895ECAC1B3F055D009D0187 /* RNNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNetworkingManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 		E839CE2A1B3EF54100115CBE /* RNNetworkingManager */ = {
 			isa = PBXGroup;
 			children = (
-				E839CE421B3EF73200115CBE /* RNNetworkingManager.m */,
-				E839CE431B3EF73200115CBE /* RNNetworkingManager.h */,
+				E895ECAB1B3F055D009D0187 /* RNNetworkingManager.m */,
+				E895ECAC1B3F055D009D0187 /* RNNetworkingManager.h */,
 			);
 			path = RNNetworkingManager;
 			sourceTree = "<group>";
@@ -253,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E839CE441B3EF73200115CBE /* RNNetworkingManager.m in Sources */,
+				E895ECAD1B3F055D009D0187 /* RNNetworkingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
