@@ -10,8 +10,6 @@
 		A578268C121B3E14C0CCCA5C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 600C3B9490B8A2B1F13B43BA /* libPods.a */; };
 		E839CE341B3EF54100115CBE /* libRNNetworkingManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E839CE281B3EF54100115CBE /* libRNNetworkingManager.a */; };
 		E839CE441B3EF73200115CBE /* RNNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E839CE421B3EF73200115CBE /* RNNetworkingManager.m */; };
-		E839CE661B3EFBE400115CBE /* RNNetworkingManager.h in Sources */ = {isa = PBXBuildFile; fileRef = E839CE431B3EF73200115CBE /* RNNetworkingManager.h */; };
-		E839CE681B3EFC1F00115CBE /* libPods-AFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E839CE671B3EFC1F00115CBE /* libPods-AFNetworking.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E839CE681B3EFC1F00115CBE /* libPods-AFNetworking.a in Frameworks */,
 				A578268C121B3E14C0CCCA5C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E839CE661B3EFBE400115CBE /* RNNetworkingManager.h in Sources */,
 				E839CE441B3EF73200115CBE /* RNNetworkingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
