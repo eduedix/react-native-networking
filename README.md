@@ -23,12 +23,13 @@ $ pod setup
 4. Run your project (`Cmd+R`)
 
 ## Usage
-1. In your react-native project, require the module.
+In your react-native project, require the module:
 ```javascript
+
+var RNNetworkingManager = require('react-native-networking');
 var url = 'localhost:3000';
 
 // Example GET request, (download)
-var RNNetworkingManager = require('react-native-networking');
 RNNetworkingManager.requestFile(url, {
     'method':'GET'
 }, function(results) {
@@ -43,8 +44,7 @@ RNNetworkingManager.requestFile(url, {
     console.log(results);
 });
 ```
-
-2. The GET request automatically downloads the file to the `Documents/` in your app. Similarly, the POST request automatically uploads from `Documents/` of your app.
+The GET request automatically downloads the file to the `Documents/` in your app. Similarly, the POST request automatically uploads from `Documents/` of your app.
 
 -------------------------------
 
