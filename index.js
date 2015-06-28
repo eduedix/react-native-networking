@@ -1,4 +1,5 @@
 'use strict'
 
-module.exports = require('NativeModules').RNNetworkingManager;
+var RNNetworkingManager = require('NativeModules').RNNetworkingManager;
+module.exports = RNNetworkingManager;
 
