@@ -43,6 +43,7 @@ RNNetworkingManager.requestFile(url, {
     console.log(results);
 });
 ```
+
 2. The GET request automatically downloads the file to the `Documents/` in your app. Similarly, the POST request automatically uploads from `Documents/` of your app.
 
 -------------------------------
