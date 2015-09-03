@@ -16,7 +16,9 @@
     "upload",
     "file",
     "module",
-    "AFNetworking"
+    "AFNetworking",
+    "ios",
+    "android"
   ],
   "author": "Erdem Başeğmez <eduedix@gmail.com>",
   "license": "MIT",
@@ -28,6 +30,6 @@
     "react-native": "^0.6.0"
   },
   "peerDependencies": {
-    "react-native": "^0.6.0"
+    "react-native": ">=0.6.0"
   }
 }
