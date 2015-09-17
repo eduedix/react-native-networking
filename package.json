@@ -1,6 +1,6 @@
 {
   "name": "react-native-networking",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "react-native module to download and upload files with AFNetworking",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,9 @@
     "upload",
     "file",
     "module",
-    "AFNetworking"
+    "AFNetworking",
+    "ios",
+    "android"
   ],
   "author": "Erdem Başeğmez <eduedix@gmail.com>",
   "license": "MIT",
@@ -28,6 +30,6 @@
     "react-native": "^0.6.0"
   },
   "peerDependencies": {
-    "react-native": "^0.6.0"
+    "react-native": ">=0.6.0"
   }
 }
