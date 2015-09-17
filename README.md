@@ -46,6 +46,65 @@ RNNetworkingManager.requestFile(url, {
 ```
 The GET request automatically downloads the file to the `Documents/` in your app. Similarly, the POST request automatically uploads from `Documents/` of your app.
 
+## Installation (Android)
+
+* In `android/setting.gradle`
+
+```gradle
+...
+include ':RNNetworkingManager', ':app'
+project(':RNNetworkingManager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-networking/android')
+```
+
+* In `android/app/build.gradle`
+
+```gradle
+...
+dependencies {
+    ...
+    compile project(':RNNetworkingManager')
+}
+```
+
+* register module (in MainActivity.java)
+
+```java
+import com.learnium.RNNetworkingManager.*;  // <--- import
+
+public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
+  ......
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    mReactRootView = new ReactRootView(this);
+
+    mReactInstanceManager = ReactInstanceManager.builder()
+      .setApplication(getApplication())
+      .setBundleAssetName("index.android.bundle")
+      .setJSMainModuleName("index.android")
+      .addPackage(new MainReactPackage())
+      .addPackage(new RNNetworkingManagerModule())              // <------ add here
+      .setUseDeveloperSupport(BuildConfig.DEBUG)
+      .setInitialLifecycleState(LifecycleState.RESUMED)
+      .build();
+
+    mReactRootView.startReactApplication(mReactInstanceManager, "ExampleRN", null);
+
+    setContentView(mReactRootView);
+  }
+
+  ......
+
+}
+```
+
+(Thanks to @chirag04 for writing the instructions)
+
+## Android Limitations
+
+Android currently only supports downloading at the moment.
+
 -------------------------------
 
 Please feel free to open issues and contribute.
