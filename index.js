@@ -1,5 +1,7 @@
 'use strict'
 
-var RNNetworkingManager = require('NativeModules').RNNetworkingManager;
+var { NativeModules } = require('react-native'); 
+var RNNetworkingManager = NativeModules.RNNetworkingManager;
+
 module.exports = RNNetworkingManager;
 
