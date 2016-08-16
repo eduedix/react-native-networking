@@ -3,32 +3,14 @@ A react-native module to download and upload files on iOS and Android.
 
 # Installation
 ## Installation (iOS)
-You should have `pod` installed.
-```
-$ sudo gem install cocoapods
-$ pod setup
-```
-1. Open Terminal and `cd` to your project folder.
-
-2. Install react-native-networking with npm and AFNetworking with pods:
+Assuming you're using `cocoapods` to manage your iOS dependencies, add `react-native-networking` as a new dependency: 
 
 ```
-npm install react-native-networking --save && cd node_modules/react-native-networking && pod install && open RNNetworkingManager.xcworkspace
+# Podfile
+pod 'react-native-networking', :path => '../node_modules/react-native-networking'
 ```
-3. Add necessary linking to RNNetworkingManager following these steps:
- 1. Select `RNNetworkingManager` target
- 2. Go to `Build Phases`, select `Link Binary with Libraries`
- 3. Remove `libPods-AFNetworking` and add `libAFNetworking.a` using + and - signs.
- 4. Close `RNNetworkingManager` workspace.
-4. Add and link libraries
- 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`.
- 2. Go to `node_modules` ➜ `react-native-networking` and add `RNNetworkingManager.xcodeproj`.
- 3. Again, right click `Libraries` ➜ `Add Files to [your project's name]`.
- 4. Go to `node_modules/react-native-networking/Pods` and add `Pods.xcodeproj`.
- 5. In XCode, in the project navigator, select your project. Add `libRNNetworkingManager.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
- 6. Click `RNNetworkingManager.xcodeproj` in the project navigator and go the `Build Settings` tab. Make sure 'All' is toggled on (instead of 'Basic'). Look for `Header Search Paths` and make sure it contains both `$(SRCROOT)/../react-native/React` and `$(SRCROOT)/../../React` - mark both as `recursive`.
 
-4. Run your project (`Cmd+R`)
+then run `pod install` and you're good to go!
 
 ## Installation (Android)
 
