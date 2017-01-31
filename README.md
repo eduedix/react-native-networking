@@ -1,4 +1,4 @@
-### This module is deprecated. Use https://github.com/johanneslumpe/react-native-fs instead.
+### This module is deprecated. Use https://github.com/wkh237/react-native-fetch-blob or https://github.com/johanneslumpe/react-native-fs instead.
 
 # react-native-networking
 A react-native module to download and upload files on iOS and Android.
